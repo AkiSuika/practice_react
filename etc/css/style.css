@@ -1,0 +1,31 @@
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header {
+    background: tomato;
+  }
+  .container {
+    display: flex;
+  }
+  .main {
+    background: pink;
+    width: 70%;
+  }
+  .side {
+    background: orange;
+    width: 30%;
+  }
+  footer {
+    background: plum;
+  }
+  
+  @media (max-width: 600px){
+    .container {
+      flex-direction: column;
+    }
+    .main,
+    .side {
+      width: 100%;
+    }
+  }
